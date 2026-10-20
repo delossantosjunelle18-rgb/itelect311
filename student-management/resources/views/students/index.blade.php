@@ -2,10 +2,13 @@
  
 @section('content') 
  
-<div class="d-flex justify-content-between align-items-center mb-3"> 
+<div class="d-flex justify-content-between align-items-center 
+mb-3"> 
     <h2>Student List</h2> 
  
-    <a href="{{ route('students.create') }}" class="btn btnprimary">         Add Student 
+    <a href="{{ route('students.create') }}" class="btn btn
+primary"> 
+        Add Student 
     </a> 
 </div> 
  
@@ -21,12 +24,13 @@
                     <th>Course</th> 
                     <th>Actions</th> 
                 </tr> 
-           </thead> 
-<tbody> 
-       @forelse($students as $student) 
-                <tr> 
-                    <td>{{ $student->student_number }}</td> 
-                    <td>{{ $student->first_name }} {{ 
+            </thead> 
+ 
+            <tbody> 
+                @forelse($students as $student) 
+                    <tr> 
+                        <td>{{ $student->student_number }}</td> 
+                        <td>{{ $student->first_name }} {{ 
 $student->last_name }}</td> 
                         <td>{{ $student->email }}</td> 
                         <td>{{ $student->course }}</td> 
@@ -44,12 +48,18 @@ $student) }}"
                                 Edit 
                             </a> 
  
-                            <form action="{{ route('students.destroy', $student) }}"                                   method="POST"                                   class="d-inline"                                   onsubmit="return confirm('Delete this student?')"> 
+                            <form action="{{ 
+route('students.destroy', $student) }}" 
+                                  method="POST" 
+                                  class="d-inline" 
+                                  onsubmit="return 
+confirm('Delete this student?')"> 
  
                                 @csrf 
                                 @method('DELETE') 
  
-                                <button type="submit" class="btn btn-danger btn-sm"> 
+                                <button type="submit" class="btn 
+btn-danger btn-sm"> 
                                     Delete 
                                 </button> 
                             </form> 
@@ -63,8 +73,9 @@ $student) }}"
                     </tr> 
                 @endforelse 
             </tbody> 
-    </table> 
-</div> 
+        </table> 
+ 
+    </div> 
 </div> 
  
-@endsection 
+@endsection

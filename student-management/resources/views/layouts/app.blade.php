@@ -1,17 +1,23 @@
+ 
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initialscale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0"> 
  
     <title>Student Management System</title> 
-     <link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/boot strap.min.css" rel="stylesheet"> 
+ 
+    <link 
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/boot
+strap.min.css" rel="stylesheet"> 
 </head> 
 <body class="bg-light"> 
  
-    <nav class="navbar navbar-dark bg-dark">         <div class="container"> 
-            <a class="navbar-brand" href="{{ route('students.index') }}"> 
+    <nav class="navbar navbar-dark bg-dark"> 
+        <div class="container"> 
+            <a class="navbar-brand" href="{{ 
+route('students.index') }}"> 
                 Student Management System 
             </a> 
         </div> 
@@ -30,4 +36,4 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/boot strap.min.css" 
     </div> 
  
 </body> 
-</html> 
+</html>

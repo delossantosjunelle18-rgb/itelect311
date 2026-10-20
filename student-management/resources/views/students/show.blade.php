@@ -12,14 +12,18 @@
         </p> 
  
         <p><strong>First Name:</strong> 
-            {{ $student->first_name }}         </p> 
-       <p><strong>Last Name:</strong> 
-{{ $student->last_name }} 
-</p>
-    <p><strong>Email:</strong> 
-        {{ $student->email }} 
-    </p> 
-       <p><strong>Course:</strong> 
+            {{ $student->first_name }} 
+        </p> 
+ 
+        <p><strong>Last Name:</strong> 
+            {{ $student->last_name }} 
+        </p> 
+ 
+        <p><strong>Email:</strong> 
+            {{ $student->email }} 
+        </p> 
+ 
+        <p><strong>Course:</strong> 
             {{ $student->course }} 
         </p> 
  
@@ -28,7 +32,8 @@
             Edit Student 
         </a> 
  
-        <a href="{{ route('students.index') }}"            class="btn btn-secondary"> 
+        <a href="{{ route('students.index') }}" 
+           class="btn btn-secondary"> 
             Back to List 
         </a> 
  
